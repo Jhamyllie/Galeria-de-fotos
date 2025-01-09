@@ -74,3 +74,58 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
+/* RESPONSIVIDADE */
+
+/* Telas pequenas (mobile) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-bar input {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .search-bar button {
+        font-size: 0.9rem;
+    }
+
+    .gallery {
+        padding: 0.5rem;
+    }
+
+    .gallery-item img {
+        max-width: 100%;
+        max-height: 200px;
+    }
+}
+
+/* Telas médias (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .search-bar input {
+        width: 70%;
+    }
+
+    .gallery-item img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+
+/* Telas grandes (desktops maiores) */
+@media (min-width: 1025px) {
+    .gallery {
+        padding: 2rem;
+    }
+
+    .gallery-item img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
