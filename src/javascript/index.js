@@ -35,4 +35,6 @@ async function filtrarFotos() {
     }
 }
 
+document.getElementById("search").addEventListener("input", filtrarFotos);
+
 carregarAnimes();
